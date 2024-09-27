@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Buscador de Cocteles</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+  <div class="contenedor">
+    <div class="formulario">
+      <div class="busqueda1">
+        <div class="titulo">
+          <h1>Buscador de cocteles</h1>
+          <img src="img/icono.png" alt="">
+        </div>
+        <form id="formularo-busqueda">
+          <label for="seleccion-ingrediente">Ingrediente:</label>
+          <select name="" id="seleccion-ingrediente">
+            <option value="">Selecciona un ingrediente</option>
+            <!-- Sigue la lista donde aprecen los ingredientes con la api-->
+          </select>
+          <label for="seleccion-tipo">Tipo</label>
+          <select name="" id="seleccion-tipo">
+            <option value="">Selecciona un tipo</option>
+            <!-- Sigue la lista donde aprecen los tipos con la api-->
+          </select>
+          <label for="nombre-coctel"> Nombre Coctel</label>
+          <input type="text" id="nombreCoctel" placeholder="Ingresa el nombre del coctel que estas buscando" />
+          <button type="submit">Buscar</button>
+          <!--img src="img.avif" alt="" /-->
+        </form>
+      </div>
+    </div>
+
+    <div class="resultados" id="resultados">
+      <!-- <div class="contenido" id="contenido"></div> -->
+    </div>
+    <!-- Aquí se mostrarán los resultados -->
+  </div>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

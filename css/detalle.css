@@ -1,0 +1,192 @@
+body {
+  background: url("../img/fondodetalles.jpg") no-repeat center center fixed;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+h1 {
+  font-family: "Fredericka the Great", serif;
+  font-weight: 800;
+  margin-bottom: 20px;
+  color: #ff1077;
+}
+
+.detalle-coctel {
+  display: flex;
+  flex-direction: row; /* Mantiene la imagen y detalles lado a lado en pantallas grandes */
+  align-items: flex-start;
+  justify-content: center;
+  background-color: #ffffffcd;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 70%;
+  margin: auto;
+  align-items: center;
+}
+
+.detalle-coctel img {
+  align-items: center;
+  width: 30%; /* Ajustar el tamaño de la imagen */
+  height: auto; /* Mantener la proporción */
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+.detalle-info {
+  width: 70%; /* Ajustar el tamaño de la sección de información */
+  text-align: left;
+}
+
+#ingredient-table {
+  width: 100%; /* Mantener el ancho de la tabla */
+  margin-top: 20px;
+}
+
+h1 {
+  font-family: "Fredericka the Great", serif;
+  color: #e23737;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+p {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#ingredient-table th,
+#ingredient-table td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+#ingredient-table th {
+  background-color: #f2f2f2;
+}
+
+.detalle-btn {
+  background: linear-gradient(#ce4235, #ff6f61);
+  color: white;
+  border: none;
+  padding: 6px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.detalle-btn:hover {
+  background: linear-gradient(#e96f6f, #d03e30);
+}
+
+#volver-btn {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #e23737;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+#volver-btn:hover {
+  background-color: #ff1077;
+}
+
+/* Estilo para el modal */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  border-radius: 10px;
+  margin: 6% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+#ingredient-info-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+#ingredient-info-table th,
+#ingredient-info-table td {
+  padding: 8px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+#ingredient-info-table th {
+  background-color: #d2cece;
+}
+
+#ingredient-info-table img {
+  width: 80px;
+  height: auto;
+  border-radius: 5px;
+}
+
+.close {
+  cursor: pointer;
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Media Queries para pantallas pequeñas */
+@media (max-width: 768px) {
+  .detalle-coctel {
+    flex-direction: column; /* Imagen arriba, tabla abajo */
+    max-width: 90%; /* Ajustar el ancho */
+  }
+
+  .detalle-coctel img {
+    width: 70%; /* Imagen ocupa todo el ancho */
+    margin: 0 0 20px 0; /* Espaciado debajo de la imagen */
+  }
+
+  .detalle-info {
+    width: 95%; /* Información ocupa todo el ancho */
+  }
+}
+
+@media (max-width: 480px) {
+  .detalle-coctel {
+    padding: 10px; /* Reducir el padding en pantallas más pequeñas */
+  }
+
+  #volver-btn {
+    font-size: 14px; /* Reducir tamaño del botón */
+    padding: 8px 16px; /* Ajustar el padding del botón */
+  }
+}

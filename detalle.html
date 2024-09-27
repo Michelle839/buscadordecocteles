@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detalles del Cóctel</title>
+    <link rel="stylesheet" href="css/detalle.css" />
+    <!-- Tu archivo CSS -->
+  </head>
+
+  <body>
+    <div class="detalle-coctel">
+      <img id="cocktail-image" src="" alt="Imagen del cóctel" />
+      <div class="detalle-info">
+        <h1 id="cocktail-name"></h1>
+        <p id="cocktail-instructions"></p>
+        <table id="ingredient-table">
+          <thead>
+            <tr>
+              <th>Ingrediente</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody id="ingredient-body">
+            <!-- Aquí se agregarán los ingredientes -->
+          </tbody>
+        </table>
+        <button id="volver-btn">Volver</button>
+      </div>
+    </div>
+
+    <div id="ingredient-modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div id="modal-text"></div>
+        <!-- Este elemento se llenará con la información del ingrediente -->
+        <table id="ingredient-info-table"></table>
+      </div>
+    </div>
+
+    <script src="js/detalle.js"></script>
+  </body>
+</html>
